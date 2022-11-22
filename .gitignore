@@ -1,3 +1,10 @@
+#vscode
+/.vscode
+
+#workspace
+/tarea2.code-workspace
+
+
 # Compiled class file
 *.class
 
