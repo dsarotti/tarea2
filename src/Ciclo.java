@@ -9,6 +9,7 @@ public class Ciclo {
     private final int tipo;
     private final String codigo;
     private ArrayList<Modulo> modulos = new ArrayList<Modulo>();
+    private Alumno delegado;
 
     public Ciclo(String nombre, int tipo, String codigo){
         this.nombre = nombre;
@@ -19,6 +20,18 @@ public class Ciclo {
     public Ciclo(String nombre, int tipo,String codigo, ArrayList<Modulo> modulos){
         this(nombre,tipo, codigo );
         this.modulos = modulos;
+    }
+
+    /**
+     * 
+     * @param candidato
+     * @throws IllegalArgumentException
+     */
+    public void setDelegado(Alumno candidato) throws IllegalArgumentException{
+        if (!candidato.esDelegado){
+            throw new IllegalArgumentException();
+        }
+        //ToDo: mover este método a una nueva clase "Curso"
     }
     
     
