@@ -1,7 +1,8 @@
 import java.util.Date;
 
-/*
- * Almacena información sobre los alumnos
+/**
+ * @author Dante Sarotti
+ * @version 0.1
  */
 public class Alumno {
     private Matricula matricula;
@@ -26,6 +27,16 @@ public class Alumno {
         this.mail = mail;
         this.direccion = direccion;
         this.esDelegado = esDelegado;
+    }
+
+    public boolean esDelegado(){
+        return this.esDelegado;
+    }
+    @Override
+    public String toString() {
+        return "Alumno [matricula=" + matricula + ", dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido
+                + ", fechaNac=" + fechaNac + ", telefono=" + telefono + ", mail=" + mail + ", direccion=" + direccion
+                + ", esDelegado=" + esDelegado + "]";
     }
 
 }
