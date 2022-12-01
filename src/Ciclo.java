@@ -23,17 +23,17 @@ public class Ciclo {
     }
 
     /**
-     * 
      * @param candidato
      * @throws IllegalArgumentException
      */
     public void setDelegado(Alumno candidato) throws IllegalArgumentException{
-        if (!candidato.esDelegado){
+        if (!candidato.esDelegado()){
             throw new IllegalArgumentException();
         }
         //ToDo: mover este método a una nueva clase "Curso"
     }
     
+
     
 
 }
