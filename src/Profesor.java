@@ -3,9 +3,11 @@ import java.sql.Date;
 import java.util.ArrayList;
 
 /**
- * @author Dante Sarotti
+ ** @author Dante Sarotti
  * @version 0.1
+ * @param modulos
  */
+
 public class Profesor extends Persona {
     private ArrayList<Modulo> modulos;
 
@@ -25,8 +27,4 @@ public class Profesor extends Persona {
         super(dni, nombre, apellido, fechaNac, telefono, mail, direccion);
         this.modulos = modulos;
     }
-
-
-    
-    
 }

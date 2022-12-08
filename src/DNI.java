@@ -14,7 +14,7 @@ public class DNI {
     public String toString(){
         return (Integer.toString(numero)+letra);
     }
-    
+
     /**
      * Comprueba si el numero del dni se corresponde con la letra.
      * @param numero 
@@ -24,5 +24,4 @@ public class DNI {
     public static boolean validarDni(int numero, char letra){
         return (TABLA_LETRAS[numero%TABLA_LETRAS.length]==letra);
     }
-
 }
