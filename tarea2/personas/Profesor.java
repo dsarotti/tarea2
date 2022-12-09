@@ -21,6 +21,9 @@ public class Profesor extends Persona {
       this.modulos.add(modulo);
    }
 
+   /**
+    * @return String
+    */
    @Override
    public String toString() {
       return "Profesor [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido
@@ -28,10 +31,16 @@ public class Profesor extends Persona {
             + direccion + "]";
    }
 
+   /**
+    * @return ArrayList<Modulo>
+    */
    public ArrayList<Modulo> getModulos() {
       return modulos;
    }
 
+   /**
+    * @param modulos
+    */
    public void setModulos(ArrayList<Modulo> modulos) {
       this.modulos = modulos;
    }

@@ -8,13 +8,16 @@ public class Dni {
 
     public Dni(int numero, char letra) throws IllegalArgumentException {
         if (!validarDni(numero, letra)) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("La letra no concuerda con el DNI introducido.");
         } else {
             this.numero = numero;
             this.letra = letra;
         }
     }
 
+    /**
+     * @return String
+     */
     @Override
     public String toString() {
         return (Integer.toString(numero) + letra);

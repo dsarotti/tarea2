@@ -8,9 +8,6 @@ public class Aula {
     private int capacidad;
     private ArrayList<String> material;
 
-    /**
-     * 
-     */
     public Aula() {
 
     }
