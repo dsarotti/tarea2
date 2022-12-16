@@ -1,3 +1,5 @@
+Aquí hay algunas notas aclaratorias respecto a la interpretación de la tarea. No es parte del ejercicio y no es necesario leerlas pero si surge alguna duda respecto al funcionamiento de la jerarquía es probable que aquí esté resuelta.
+
 # 1 Alumnos
 
 * Un alumno estará matriculado en un ciclo.
