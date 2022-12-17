@@ -4,7 +4,7 @@ Aquí hay algunas notas aclaratorias respecto a la interpretación de la tarea. 
 
 * Un alumno estará matriculado en un ciclo.
 
-> Respecto a esto, ya que no se pide ninguna clase que lleve el control de los ciclos que se crean, y ya que los alumnos  matriculados se guardan en el curso y los cursos se guardan en cada ciclo el mecanismo que limite que un alumno solo pueda estar en un ciclo deberá llevarse a cabo en el programa principal. Es decir, cuando se matriculen alumnos en un curso, deberá comprobarse que el mismo alumno no esté matriculado en otros cursos de otros ciclos.
+> Respecto a esto, ya que no se pide ninguna clase que lleve el control de los ciclos que se crean, y ya que los alumnos  matriculados se guardan en el curso y los cursos se guardan en cada ciclo, el mecanismo que limite que un alumno solo pueda estar en un ciclo deberá llevarse a cabo en el programa principal. Es decir, cuando se matriculen alumnos en un curso, deberá comprobarse que el mismo alumno no esté matriculado en otros cursos de otros ciclos.
 
 ---
 # 2 Delegados
