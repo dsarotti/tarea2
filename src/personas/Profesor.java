@@ -6,14 +6,38 @@ import java.util.Date;
 import ciclos.Modulo;
 
 public class Profesor extends Persona {
-   private ArrayList<Modulo> modulos;
+   private ArrayList<Modulo> modulos = new ArrayList<Modulo>();
 
+   /**
+    * 
+    * @param dni
+    * @param nombre
+    * @param apellido
+    * @param fechaNacimiento
+    * @param telefono
+    * @param email
+    * @param direccion
+    * @param modulos
+    * @throws IllegalArgumentException
+    */
    public Profesor(Dni dni, String nombre, String apellido, Date fechaNacimiento, int telefono, String email,
          String direccion, ArrayList<Modulo> modulos) throws IllegalArgumentException {
       super(dni, nombre, apellido, fechaNacimiento, telefono, email, direccion);
       this.modulos = modulos;
    }
 
+   /**
+    * 
+    * @param dni
+    * @param nombre
+    * @param apellido
+    * @param fechaNacimiento
+    * @param telefono
+    * @param email
+    * @param direccion
+    * @param modulo
+    * @throws IllegalArgumentException
+    */
    public Profesor(Dni dni, String nombre, String apellido, Date fechaNacimiento, int telefono, String email,
          String direccion, Modulo modulo) throws IllegalArgumentException {
       super(dni, nombre, apellido, fechaNacimiento, telefono, email, direccion);

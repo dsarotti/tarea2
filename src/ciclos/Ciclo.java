@@ -13,6 +13,15 @@ public class Ciclo {
     private ArrayList<Modulo> modulos = new ArrayList<Modulo>();
     private Curso[] cursos;
 
+    /**
+     * Constructor con el que establecer el array de cursos con el @param cursos .
+     * Utilizando estre constructor no es necesario establecer el array de cursos a posteriori.
+     * @param nombre
+     * @param codigo
+     * @param tipo
+     * @param modulos
+     * @param cursos
+     */
     public Ciclo(String nombre, String codigo, int tipo, ArrayList<Modulo> modulos, Curso[] cursos) {
         this.nombre = nombre;
         this.codigo = codigo;
@@ -21,6 +30,16 @@ public class Ciclo {
         this.cursos = cursos;
     }
 
+    /**
+     * Constructor con el que especificar el numero de cursos sin establecerlos con el @param cursos .
+     * Inicializa el array de cursos.
+     * si se utiliza estre constructor deben introducirse los cursos a posteriori.
+     * @param nombre
+     * @param codigo
+     * @param tipo
+     * @param modulos
+     * @param cursos
+     */
     public Ciclo(String nombre, String codigo, int tipo, ArrayList<Modulo> modulos, int cursos) {
         this.nombre = nombre;
         this.codigo = codigo;
@@ -65,6 +84,8 @@ public class Ciclo {
     }
 
     /**
+     * Especifica el tipo de ciclo. Debe corresponderse con los valores de las constantes de clase.
+     * Si se especifica un numero distinto de 1, 2 o 3 lanza una excepción.
      * @param tipo
      * @throws IllegalArgumentException
      */
@@ -90,6 +111,8 @@ public class Ciclo {
     }
 
     /**
+     * Cada ciclo tiene 2 o 3 cursos.
+     * Si se especifica un numero de cursos distinto de 2 o 3 lanza una excepción.
      * @param cursos
      * @throws IllegalArgumentException
      */

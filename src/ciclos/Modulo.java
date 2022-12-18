@@ -2,11 +2,11 @@ package ciclos;
 
 public class Modulo {
     private String nombre;
-    private String codigo;
+    private int codigo;
     private int horas;
     private Aula aula;
 
-    public Modulo(String nombre, String codigo, int horas, Aula aula) {
+    public Modulo(String nombre, int codigo, int horas, Aula aula) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.horas = horas;
@@ -30,14 +30,14 @@ public class Modulo {
     /**
      * @return String
      */
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
     /**
      * @param codigo
      */
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 

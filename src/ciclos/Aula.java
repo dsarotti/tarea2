@@ -9,7 +9,12 @@ public class Aula {
     private ArrayList<String> material;
 
     public Aula() {
+    }
 
+    public Aula(String nombrePlanta, int numero, int capacidad) {
+        this.nombrePlanta = nombrePlanta;
+        this.numero = numero;
+        this.capacidad = capacidad;
     }
 
     /**

@@ -51,11 +51,11 @@ Aquí hay algunas notas aclaratorias respecto a la interpretación de la tarea. 
 # 8 Relación aula-módulo
 * Para reflejar la relación entre aulas y módulos podremos utilizar la clase AulaModulo que almacenará pares "Aula" / "Modulo".
 * Un módulo solo se impartirá en un aula.
-> Al guardar el objeto Aula dentro de cada se cumple esta restricción.
+> Al guardar el objeto Aula dentro de cada módulo se cumple esta restricción.
 
 * Un aula podrá utilizarse en varios módulos.
 
-> En este caso hacemos una aproximación distinta al de los pares Aula-Modulo: Cada objeto de la clase Modulo guarda una objeto de la clase Aula que identifica el aula donde se imparte dicho modulo. El objeto Aula puede volver a utilizarse en otros objetos de la clase Modulo, el mecanismo que guarde las aulas que se van creando deberá ser implementado en el programa principal. O también podría crearse una clase destinada a instanciarse una sola vez cuyo propósito sea llevar un control de las aulas existentes.
+> En este caso hacemos una aproximación distinta al de los pares Aula-Modulo: Cada objeto de la clase Modulo guarda una objeto de la clase Aula que identifica el aula donde se imparte dicho modulo. El objeto Aula puede volver a utilizarse en otros objetos de la clase Modulo, el mecanismo que guarde las aulas que se van creando deberá ser implementado en el programa principal.
 
 # 9 Relación módulo-profesor
 > Aunque en el punto anterior descarto la posibilidad de implementar los pares aula-módulo, un mecanismo similar se puede utilizar para gestionar los profesores y los módulos.
