@@ -10,11 +10,27 @@ public class Curso {
     private Alumno delegado;
     private Profesor tutor;
 
+    /**
+     * Este constructor permite crear cursos sin asignarles el delegado ni el tutor,
+     * para hacerlo a posteriori
+     * 
+     * @param alumnos
+     * @param modulosProfesores
+     */
     public Curso(ArrayList<Alumno> alumnos, ArrayList<ModuloProfesor> modulosProfesores) {
         this.alumnos = alumnos;
         this.modulosProfesores = modulosProfesores;
     }
 
+    /**
+     * Constructor para establecer delegado y tutor al instanciarlo.
+     * 
+     * @param alumnos
+     * @param modulosProfesores
+     * @param delegado
+     * @param tutor
+     * @throws IllegalArgumentException
+     */
     public Curso(ArrayList<Alumno> alumnos, ArrayList<ModuloProfesor> modulosProfesores, Alumno delegado,
             Profesor tutor) throws IllegalArgumentException {
         this.alumnos = alumnos;
@@ -84,7 +100,7 @@ public class Curso {
     public boolean esProfesor(Profesor profesor, ArrayList<ModuloProfesor> modulosProfesores) {
         boolean t = false;
         for (ModuloProfesor moduloProfesor : modulosProfesores) {
-            if (moduloProfesor.getProfesor().equals(tutor)) {
+            if (moduloProfesor.getProfesor().equals(profesor)) {
                 t = true;
                 break;
             }

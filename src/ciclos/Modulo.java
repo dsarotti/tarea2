@@ -6,6 +6,23 @@ public class Modulo {
     private int horas;
     private Aula aula;
 
+    /**
+     * 
+     * @param nombre
+     * @param codigo
+     */
+    public Modulo(String nombre, int codigo) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+    }
+
+    /**
+     * 
+     * @param nombre
+     * @param codigo
+     * @param horas
+     * @param aula
+     */
     public Modulo(String nombre, int codigo, int horas, Aula aula) {
         this.nombre = nombre;
         this.codigo = codigo;

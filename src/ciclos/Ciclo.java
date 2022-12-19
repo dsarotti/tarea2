@@ -15,7 +15,9 @@ public class Ciclo {
 
     /**
      * Constructor con el que establecer el array de cursos con el @param cursos .
-     * Utilizando estre constructor no es necesario establecer el array de cursos a posteriori.
+     * Utilizando estre constructor no es necesario establecer el array de cursos a
+     * posteriori.
+     * 
      * @param nombre
      * @param codigo
      * @param tipo
@@ -31,9 +33,11 @@ public class Ciclo {
     }
 
     /**
-     * Constructor con el que especificar el numero de cursos sin establecerlos con el @param cursos .
+     * Constructor con el que especificar el numero de cursos sin establecerlos con
+     * el @param cursos .
      * Inicializa el array de cursos.
      * si se utiliza estre constructor deben introducirse los cursos a posteriori.
+     * 
      * @param nombre
      * @param codigo
      * @param tipo
@@ -84,8 +88,10 @@ public class Ciclo {
     }
 
     /**
-     * Especifica el tipo de ciclo. Debe corresponderse con los valores de las constantes de clase.
+     * Especifica el tipo de ciclo. Debe corresponderse con los valores de las
+     * constantes de clase.
      * Si se especifica un numero distinto de 1, 2 o 3 lanza una excepción.
+     * 
      * @param tipo
      * @throws IllegalArgumentException
      */
@@ -113,6 +119,7 @@ public class Ciclo {
     /**
      * Cada ciclo tiene 2 o 3 cursos.
      * Si se especifica un numero de cursos distinto de 2 o 3 lanza una excepción.
+     * 
      * @param cursos
      * @throws IllegalArgumentException
      */
